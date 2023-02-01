@@ -1,6 +1,6 @@
 - Nazwywam się Magdalena Niedzielska. Z wykształcenia jestem radcą prawnym. Dotychczas pracowałam jako starszy specjalista w Urzędzie Komisji Nadzoru Finansowego zajmując się nadzorowaniem działalności zakładów ubezpieczeń oraz brokerów i agentów ubezpieczeniowych, zaś wcześniej pracowniczych programów emerytalnych.
 Od kilku lat przebywam na urlopach rodzicielskich/wychowawczych, ponieważ chciałam spędzić z dziećmi pierwsze i najważniejsze rozwojowo lata ich życia.
-- W związku z przeprowadzką pod Warszawę moim priorytetem jest możliwość wykonywania pracy zdalnie, bym mogła pogodzić w satysfakcjonujący sposób życie zawodowe i rodzinne.
+- W związku z przeprowadzką pod Warszawę bardzo ważna jest dla mnie możliwość wykonywania pracy zdalnie, bym mogła pogodzić w satysfakcjonujący sposób życie zawodowe i rodzinne.
 - Od początku roku 2022 uczę się testowania oprogramowania.<br/> Ukończyłam kurs Wieczorowej Akademii Testowania Testuj.pl.<br/> Aktualnie samodzielnie poszerzam swoją wiedzę.
 - Ukończone kursy: <br/>
 Akademia Testowania Testuj.pl - 04.2022 - 07.2022<br/>
