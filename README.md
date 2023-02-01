@@ -26,4 +26,4 @@ http://cherry-it.pl/ <br/>
 https://uszanowanko.tsh.io/<br/>
 - Moje zadania:<br/> https://martinaaa84.atlassian.net/jira/your-work ; <br/>Bugi i przypadki testowe https://drive.google.com/drive/folders/1fP8FcHIfzMhTrFjTitgCmniIQ-9Hqovp?usp=sharing
 - Zapraszam do kontaktu: magdalena.a.niedzielska@gmail.com ; www.linkedin.com/in/magdalena-niedzielska 
-- Moje CV (stworzone przeze mnie w HTML5, CSS3) https://magdalenaniedzielska.netlify.app/ ; do pobrania jako pdf:    (wersja polska)
+- Moje CV (stworzone przeze mnie w HTML5, CSS3) https://magdalenaniedzielska.netlify.app/ ; do pobrania jako pdf: https://drive.google.com/file/d/1qHj48rM5WXaAliQ9mO_wcUCbNAVbuFjU/view?usp=share_link   (wersja polska)
