@@ -1,0 +1,702 @@
+{
+	"info": {
+		"_postman_id": "a3067455-1107-47aa-a080-d8e9f7a7d46e",
+		"name": "TRELLO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19481479"
+	},
+	"item": [
+		{
+			"name": "Checklists",
+			"item": [
+				{
+					"name": "Create a checklist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/checklists?idCard=64198e5a8d38069191f41815&key={{key}}&token={{token}}&name= Sprzątnąć po kolei&pos=top",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"checklists"
+							],
+							"query": [
+								{
+									"key": "idCard",
+									"value": "64198e5a8d38069191f41815"
+								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								},
+								{
+									"key": "name",
+									"value": " Sprzątnąć po kolei"
+								},
+								{
+									"key": "pos",
+									"value": "top"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Checkitem on Checklist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/checklists/643fdb11f74f7d3f9ea7a670/checkItems?name=książki&key={{key}}&token={{token}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"checklists",
+								"643fdb11f74f7d3f9ea7a670",
+								"checkItems"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "książki"
+								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get a Checklist",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/checklists/643fdb11f74f7d3f9ea7a670?key={{key}}&token={{token}}&fields=all",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"checklists",
+								"643fdb11f74f7d3f9ea7a670"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								},
+								{
+									"key": "fields",
+									"value": "all"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update a Checklist",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/1/checklists/643fdb11f74f7d3f9ea7a670?key={{key}}&token={{token}}&name=Do sprzątnięcia",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"checklists",
+								"643fdb11f74f7d3f9ea7a670"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								},
+								{
+									"key": "name",
+									"value": "Do sprzątnięcia"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Boards",
+			"item": [
+				{
+					"name": "Creating a new board",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/boards/?name=Nowa Tablica&key={{key}}&token={{token}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"boards",
+								""
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Nowa Tablica"
+								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete created board",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/boards/643fb7490da1082aa915ef89?key=264d591baafe660a60ec9070d27d8eb0&token=ATTA8bd6df3c18948fec7b7f9337c4009f1654daeeb2d62425e748e405f309d17a737E369DAC",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"boards",
+								"643fb7490da1082aa915ef89"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "264d591baafe660a60ec9070d27d8eb0"
+								},
+								{
+									"key": "token",
+									"value": "ATTA8bd6df3c18948fec7b7f9337c4009f1654daeeb2d62425e748e405f309d17a737E369DAC"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show all boards",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/members/magdalenaniedzielska3/boards?key={{key}}&token={{token}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"members",
+								"magdalenaniedzielska3",
+								"boards"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a list on a board \"Test\"",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Should verify if the response code is 200 or 201\", ()=> {\r",
+									"    pm.expect(pm.response.code).to.be.oneOf([200, 201]);\r",
+									"})\r",
+									"//poniższy test sprawdza, czy w ogóle jest składowa nagłówka Content-Type\r",
+									"pm.test(\"Should verify response's content type\", () => {\r",
+									"    pm.response.to.have.header(\"Content-Type\");\r",
+									" })\r",
+									" pm.test(\"Should verify if Headers' Content Type is application/json; charset=utf-8\", () => {\r",
+									"     pm.expect(pm.response.headers.get(\"Content-Type\")).to.eql(\"application/json; charset=utf-8\");\r",
+									" })"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/boards/64149205d87dfbf58f6a2763/lists?name=Wreszcie zrobione&key=264d591baafe660a60ec9070d27d8eb0&token=ATTA8bd6df3c18948fec7b7f9337c4009f1654daeeb2d62425e748e405f309d17a737E369DAC&pos=bottom",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"boards",
+								"64149205d87dfbf58f6a2763",
+								"lists"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "Wreszcie zrobione"
+								},
+								{
+									"key": "key",
+									"value": "264d591baafe660a60ec9070d27d8eb0"
+								},
+								{
+									"key": "token",
+									"value": "ATTA8bd6df3c18948fec7b7f9337c4009f1654daeeb2d62425e748e405f309d17a737E369DAC"
+								},
+								{
+									"key": "pos",
+									"value": "bottom"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get lists on a board \"Test\"",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"//1 sposób//pm.test(\"Should verify if response status code is 200\", () => {console.log(pm.response) pm.response.to.have.status(200);})\r",
+									"//2 sposób//\r",
+									"pm.test(\"Should verify if response status code is 200\", () => {\r",
+									"    //console.log(pm.response.code) \r",
+									"pm.expect(pm.response.code).to.eql(200);\r",
+									"pm.expect(pm.response.code).to.be.a(\"number\"); })\r",
+									"pm.test(\"Should verify response time\", () => {\r",
+									"    pm.expect(pm.response.responseTime).to.lessThan(200);\r",
+									"     })\r",
+									"pm.test(\"Should verify response status\", () => {\r",
+									"    pm.expect(pm.response.status).to.eql(\"OK\");\r",
+									"    pm.expect(pm.response.status).to.be.a(\"string\");\r",
+									"     })\r",
+									"pm.test(\"Should verify name of the list on fixed position\", () => {\r",
+									"    const responseBody = pm.response.json();\r",
+									"    console.log(responseBody[0].name);\r",
+									"     pm.expect(responseBody[0].name).to.eql(\"Do zrobienia\");\r",
+									"    })\r",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/boards/64149205d87dfbf58f6a2763/lists?key=264d591baafe660a60ec9070d27d8eb0&token=ATTA8bd6df3c18948fec7b7f9337c4009f1654daeeb2d62425e748e405f309d17a737E369DAC",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"boards",
+								"64149205d87dfbf58f6a2763",
+								"lists"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "264d591baafe660a60ec9070d27d8eb0"
+								},
+								{
+									"key": "token",
+									"value": "ATTA8bd6df3c18948fec7b7f9337c4009f1654daeeb2d62425e748e405f309d17a737E369DAC"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Gets cards on the board \"Test\"",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/boards/64149205d87dfbf58f6a2763/cards?key=264d591baafe660a60ec9070d27d8eb0&token=ATTA8bd6df3c18948fec7b7f9337c4009f1654daeeb2d62425e748e405f309d17a737E369DAC",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"boards",
+								"64149205d87dfbf58f6a2763",
+								"cards"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "264d591baafe660a60ec9070d27d8eb0"
+								},
+								{
+									"key": "token",
+									"value": "ATTA8bd6df3c18948fec7b7f9337c4009f1654daeeb2d62425e748e405f309d17a737E369DAC"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Lists",
+			"item": [
+				{
+					"name": "Archive a list on a board \"Test\"",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/lists/641985823e12dd01de5b8f20/closed?key=264d591baafe660a60ec9070d27d8eb0&token=ATTA8bd6df3c18948fec7b7f9337c4009f1654daeeb2d62425e748e405f309d17a737E369DAC&value=true",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"lists",
+								"641985823e12dd01de5b8f20",
+								"closed"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "264d591baafe660a60ec9070d27d8eb0"
+								},
+								{
+									"key": "token",
+									"value": "ATTA8bd6df3c18948fec7b7f9337c4009f1654daeeb2d62425e748e405f309d17a737E369DAC"
+								},
+								{
+									"key": "value",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Gets cards on the list \"Wreszcie zrobione\"",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/lists/641986a04cb02fa00b92af11/cards?key={{key}}&token={{token}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"lists",
+								"641986a04cb02fa00b92af11",
+								"cards"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cards",
+			"item": [
+				{
+					"name": "Create a new card on a list \"Wreszcie zrobione\"",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/cards?idList=641986a04cb02fa00b92af11&key=264d591baafe660a60ec9070d27d8eb0&token=ATTA8bd6df3c18948fec7b7f9337c4009f1654daeeb2d62425e748e405f309d17a737E369DAC&name=Github",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"cards"
+							],
+							"query": [
+								{
+									"key": "idList",
+									"value": "641986a04cb02fa00b92af11"
+								},
+								{
+									"key": "key",
+									"value": "264d591baafe660a60ec9070d27d8eb0"
+								},
+								{
+									"key": "token",
+									"value": "ATTA8bd6df3c18948fec7b7f9337c4009f1654daeeb2d62425e748e405f309d17a737E369DAC"
+								},
+								{
+									"key": "name",
+									"value": "Github"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create a new card on a list \"Do zrobienia\"",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/cards?idList=6414921cde1806d4a4aa1267&key=264d591baafe660a60ec9070d27d8eb0&token=ATTA8bd6df3c18948fec7b7f9337c4009f1654daeeb2d62425e748e405f309d17a737E369DAC&name=poprawić CV",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"cards"
+							],
+							"query": [
+								{
+									"key": "idList",
+									"value": "6414921cde1806d4a4aa1267"
+								},
+								{
+									"key": "key",
+									"value": "264d591baafe660a60ec9070d27d8eb0"
+								},
+								{
+									"key": "token",
+									"value": "ATTA8bd6df3c18948fec7b7f9337c4009f1654daeeb2d62425e748e405f309d17a737E369DAC"
+								},
+								{
+									"key": "name",
+									"value": "poprawić CV"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Card update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/cards/6419c4344fc5c422ca70ede4?key=264d591baafe660a60ec9070d27d8eb0&token=ATTA8bd6df3c18948fec7b7f9337c4009f1654daeeb2d62425e748e405f309d17a737E369DAC&name=Przygotować CV",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"cards",
+								"6419c4344fc5c422ca70ede4"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "264d591baafe660a60ec9070d27d8eb0"
+								},
+								{
+									"key": "token",
+									"value": "ATTA8bd6df3c18948fec7b7f9337c4009f1654daeeb2d62425e748e405f309d17a737E369DAC"
+								},
+								{
+									"key": "name",
+									"value": "Przygotować CV"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "More detailed card update",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n\"cover\":{\r\n            \"color\":\"red\", \r\n            \"idAttachment\":null,\r\n            \"idUploadedBackground\":null,\r\n            \"size\":\"normal\",\r\n            \"brightness\":\"light\"\r\n            }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/1/cards/6419c4344fc5c422ca70ede4?key=264d591baafe660a60ec9070d27d8eb0&token=ATTA8bd6df3c18948fec7b7f9337c4009f1654daeeb2d62425e748e405f309d17a737E369DAC&name=Przygotować CV&desc=uzupełnić o porady mentorki",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"cards",
+								"6419c4344fc5c422ca70ede4"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "264d591baafe660a60ec9070d27d8eb0"
+								},
+								{
+									"key": "token",
+									"value": "ATTA8bd6df3c18948fec7b7f9337c4009f1654daeeb2d62425e748e405f309d17a737E369DAC"
+								},
+								{
+									"key": "name",
+									"value": "Przygotować CV"
+								},
+								{
+									"key": "desc",
+									"value": "uzupełnić o porady mentorki"
+								},
+								{
+									"key": "{\"cover\":\"color\"} ",
+									"value": "pink",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a card",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/cards/641afecddf3b6f13a292a48c?key=264d591baafe660a60ec9070d27d8eb0&token=ATTA8bd6df3c18948fec7b7f9337c4009f1654daeeb2d62425e748e405f309d17a737E369DAC",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"cards",
+								"641afecddf3b6f13a292a48c"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "264d591baafe660a60ec9070d27d8eb0"
+								},
+								{
+									"key": "token",
+									"value": "ATTA8bd6df3c18948fec7b7f9337c4009f1654daeeb2d62425e748e405f309d17a737E369DAC"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "key",
+			"value": "264d591baafe660a60ec9070d27d8eb0",
+			"type": "string"
+		},
+		{
+			"key": "token",
+			"value": "ATTA8bd6df3c18948fec7b7f9337c4009f1654daeeb2d62425e748e405f309d17a737E369DAC",
+			"type": "string"
+		}
+	]
+}
