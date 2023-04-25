@@ -50,40 +50,6 @@
 					"response": []
 				},
 				{
-					"name": "Create Checkitem on Checklist",
-					"request": {
-						"method": "POST",
-						"header": [],
-						"url": {
-							"raw": "{{baseURL}}/1/checklists/643fdb11f74f7d3f9ea7a670/checkItems?name=książki&key={{key}}&token={{token}}",
-							"host": [
-								"{{baseURL}}"
-							],
-							"path": [
-								"1",
-								"checklists",
-								"643fdb11f74f7d3f9ea7a670",
-								"checkItems"
-							],
-							"query": [
-								{
-									"key": "name",
-									"value": "książki"
-								},
-								{
-									"key": "key",
-									"value": "{{key}}"
-								},
-								{
-									"key": "token",
-									"value": "{{token}}"
-								}
-							]
-						}
-					},
-					"response": []
-				},
-				{
 					"name": "Get a Checklist",
 					"request": {
 						"method": "GET",
@@ -131,7 +97,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{baseURL}}/1/checklists/643fdb11f74f7d3f9ea7a670?key={{key}}&token={{token}}&name=Do sprzątnięcia",
+							"raw": "{{baseURL}}/1/checklists/643fdb11f74f7d3f9ea7a670?key={{key}}&token={{token}}&name=Sprzątanieeee",
 							"host": [
 								"{{baseURL}}"
 							],
@@ -151,7 +117,217 @@
 								},
 								{
 									"key": "name",
-									"value": "Do sprzątnięcia"
+									"value": "Sprzątanieeee"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Checkitem on Checklist",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/checklists/643fdb11f74f7d3f9ea7a670/checkItems?name=książki religijne&key={{key}}&token={{token}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"checklists",
+								"643fdb11f74f7d3f9ea7a670",
+								"checkItems"
+							],
+							"query": [
+								{
+									"key": "name",
+									"value": "książki religijne"
+								},
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get field on a Checklist",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"id\": \"643fdbe919a297c38895d365\",\r\n        \"name\": \"biureczko\",\r\n        \"nameData\": {\r\n            \"emoji\": {}\r\n        },\r\n        \"pos\": 16384,\r\n        \"state\": \"incomplete\",\r\n        \"due\": null,\r\n        \"dueReminder\": null,\r\n        \"idMember\": null,\r\n        \"idChecklist\": \"643fdb11f74f7d3f9ea7a670\"\r\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/1/checklists/643fdb11f74f7d3f9ea7a670/checkItems/643fdbe919a297c38895d365?key={{key}}&token={{token}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"checklists",
+								"643fdb11f74f7d3f9ea7a670",
+								"checkItems",
+								"643fdbe919a297c38895d365"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Board the Checklist is on",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/checklists/643fdb11f74f7d3f9ea7a670/board?key={{key}}&token={{token}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"checklists",
+								"643fdb11f74f7d3f9ea7a670",
+								"board"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get the Card a Checklist is on",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/checklists/643fdb11f74f7d3f9ea7a670/cards?key={{key}}&token={{token}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"checklists",
+								"643fdb11f74f7d3f9ea7a670",
+								"cards"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Checkitems on a Checklist",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseURL}}/1/checklists/643fdb11f74f7d3f9ea7a670/checkItems?key={{key}}&token={{token}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"checklists",
+								"643fdb11f74f7d3f9ea7a670",
+								"checkItems"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete a Checklist",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseURL}}/1/checklists/643fdb11f74f7d3f9ea7a670?key={{key}}&token={{token}}",
+							"host": [
+								"{{baseURL}}"
+							],
+							"path": [
+								"1",
+								"checklists",
+								"643fdb11f74f7d3f9ea7a670"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "{{key}}"
+								},
+								{
+									"key": "token",
+									"value": "{{token}}"
+								},
+								{
+									"key": "name",
+									"value": "Do sprzątnięcia",
+									"disabled": true
 								}
 							]
 						}
